@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+</head>
+<body style="background-color: rgba(59, 32, 177, 0.884);
+color: hsl(59, 86%, 53%);">
+    <form>
+        <center>
+           <section><fieldset style="background-color: rgb(255, 0, 0); border-radius: 45px; width: 600px; ">
+        <h1 style="text-decoration: underline; font-size: 400%; color: rgba(59, 32, 177, 0.884); ">Payment Form</h1>
+        <p style=" font-size: 120%; color: rgb(251, 255, 26); ">required fields are followed by *</p>
+        <h2 style="text-decoration: underline; font-size: 250%;" >Contact Details</h2>
+        <p>FIRST NAME *: <input type="text" name="first name" required></p>
+        <p>LAST NAME: <input type="text" name="last name"></p>
+        <p> 
+            <fieldset style="
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 0, 0);
+            border-width: 6px;
+            font-size: 125%;">
+                <legend><b>  Gender * </b></legend>
+            MALE <input type="radio" name="gender" id="male" required >
+            FEMALE <input type="radio" name="gender" id="female" required >
+            OTHER <input type="radio" name="gender" id="other" required >
+            </fieldset>
+    </p>
+    <p>
+        ADDRESS: <textarea name="address" id="address" cols="50" rows="2"></textarea> 
+    </p>
+    <p>
+        PHONE NUMBER *: <input type="number" name="phone_number" id="phone_numer" required>
+    </p>
+    <p>
+        EMAIL *: <input type="email" name="email" id="email" required>
+    </p>
+    <p>
+        PINCODE *: <input type="number" name="pincode" id="pincode" required>
+    </p>
+</section></fieldset>
+<section> <fieldset style="background-color: rgb(255, 0, 0); border-radius: 45px; width: 600px;">
+    <h2 style="text-decoration: underline; font-size: 250%; color: rgb(59, 86%, 53%);">Payment Information</h2>
+    <p>
+        CARD TYPE *: <select name="card_type" id="card_type" required>
+            <option value="">--select a card type</option>
+            <option value="rupay card">rupay card</option>
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+        </select>
+    </p>
+    <p>
+        CARD NUMBER *: <input type="number" name="card_numer" id="card_numer" required>
+    </p>
+    <p>
+        CARD EXPIRATION DATE *<input type="date" name="card_epiration_date" id="card_epiration_date" required>
+    </p>
+    <p>
+        CVV NUMBER *: <input type="password" name="cvv" id="cvv" required>
+    </p>
+    <input type="submit" value="Pay Now">
+    <input type="reset" value="reset">
+</fieldset>
+</section>
+</center>
+    </form>
+</body>
+</html>
